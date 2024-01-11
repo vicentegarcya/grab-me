@@ -6,7 +6,12 @@ const TicketStyled = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: fit-content;
-  transform: rotate(270deg);
+  height: calc(40vw / 8);
+  padding: 8px 12px;
+
+  > p {
+    font-size: 0.85vw;
+  }
 `;
 
 type TicketProps = {

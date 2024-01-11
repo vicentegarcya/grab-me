@@ -5,15 +5,22 @@ import styled from "styled-components";
 
 const AdvertisementStyled = styled.div`
   border: 1px solid yellow;
-  width: 50vw;
+  width: 40vw;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 30px;
+  font-size: 1vw;
 
   > p, > div {
     margin-top: 20px;
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
   }
 `;
 
