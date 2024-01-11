@@ -1,11 +1,9 @@
-'use client'
-
 import styled from "styled-components";
 import Ticket from "../atoms/Ticket";
 
 const TicketsGroupStyled = styled.div`
   width: 40vw;
-  height: auto;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   transform: rotate(-90deg);

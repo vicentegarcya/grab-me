@@ -1,6 +1,9 @@
+'use client'
+
 import Advertisement from "./components/atoms/Advertisement";
 import ButtonsGroup from "./components/molecules/ButtonsGroup";
 import TicketsGroup from "./components/molecules/TicketsGroup";
+import Footer from "./components/organisms/Footer";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -13,6 +16,7 @@ export default function Home() {
         contact={['vicentegarcya', '+34 684003481', 'hola@vicentegarcya.com']}
       />
       <TicketsGroup />
+      <Footer />
     </main>
   );
 }

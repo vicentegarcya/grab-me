@@ -6,6 +6,7 @@ const ButtonStyled = styled.a`
   margin: 0 10px;
   padding: 8px 12px;
   font-size: 0.75em;
+  z-index: 10;
 
   &:hover {
     cursor: pointer;

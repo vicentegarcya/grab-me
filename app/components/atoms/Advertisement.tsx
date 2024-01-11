@@ -1,7 +1,8 @@
-'use client'
-
 import Link from "next/link";
 import styled from "styled-components";
+import { Stardos_Stencil } from 'next/font/google';
+
+const stardos = Stardos_Stencil({weight: '400', subsets: ['latin'] });
 
 const AdvertisementStyled = styled.div`
   border: 1px solid yellow;
@@ -12,6 +13,7 @@ const AdvertisementStyled = styled.div`
   align-items: center;
   padding: 20px 30px;
   font-size: 1vw;
+  z-index: 5;
 
   > p, > div {
     margin-top: 20px;
@@ -37,7 +39,7 @@ export default function Advertisement({
 }: AdvertisementProps) {
     return(
         <AdvertisementStyled>
-            <h2>{cta.toUpperCase()}</h2>
+            <h2 className={stardos.className}>{cta.toUpperCase()}</h2>
             <p>{text}</p>
             <div>
                 <p>{contact[0]}</p>
